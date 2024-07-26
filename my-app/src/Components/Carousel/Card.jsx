@@ -105,6 +105,11 @@
 // export default Card;
 
 
+
+
+
+
+
 import React, { useState } from 'react';
 
 import bali from '../../images/card3.jpg';
@@ -171,10 +176,8 @@ function Card() {
   return (
     <div className="cardapp">
       {/* <div className="header"> */}
-      <Container className="me-auto header" style={{width:'50%'}}>
-        
-            
-            <h1>Explore new worlds with exotic natural scenery</h1>
+      <Container className="me-auto header" style={{width:'50%'}}> 
+     <h1>Explore new worlds with exotic natural scenery</h1>
         <p>Explore the world with what you love beautiful natural beauty.</p>
        
       </Container>
@@ -205,6 +208,7 @@ function Card() {
                 <h3 style={{color:'#116cf5'}}>{slide.title}</h3>
                 <p>{slide.description}</p>
               </div>
+       
             </div>
           ))}
         </div>

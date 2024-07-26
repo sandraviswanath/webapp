@@ -76,12 +76,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh; /* Ensure it covers full viewport height */
+    min-height: 50vh; 
     width: 100%;
     background-image: url('bannercard.avif');
-    background-size: cover; /* Ensure the background covers the entire container */
+    background-size: cover; 
     background-repeat: no-repeat;
-    background-position: center; /* Center the background image */
+    background-position: center; 
     margin: 0;
   }
   
