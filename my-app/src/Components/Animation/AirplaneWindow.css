@@ -247,7 +247,7 @@
   }
 }
   */
-@media only screen and (max-width: 720px) and (min-width: 540px){
+@media only screen and (max-width: 812px) and (min-width: 540px){
   .window {
     
     height: 25vh;
@@ -262,12 +262,31 @@
   .containers {
     height: 50vh;
     background-size: cover;
-    /* gap: 11%; */
-    gap: 15%;
+   
+    gap: 11%;
   }
 } 
 
 
+@media only screen and (max-width: 990px) and (min-width: 667px){
+  .window {
+    
+    height: 18vh;
+    border-radius: 20px;
+    width:9vw;
+  }
+  .image {
+    width: 9vw;
+    height: 25vh;
+    border-radius: 20px;
+  }
+  .containers {
+    height: 50vh;
+    background-size: cover;
+   
+    gap: 11%;
+  }
+} 
 
 /* @media only screen and (max-width: 882px) and (min-width: 344px){
   .window {
