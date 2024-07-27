@@ -12,8 +12,8 @@ function Mainbanner() {
                 </Col>
             </Row>
             {/* <Row style={{color:'white',marginLeft:'5%',marginTop:'12%'}}>  */}
-            <Row style={{color:'white',marginTop:'11%'}}> 
-                <p >Popular place : Bali,Istanbul,Rom,Paris.</p>
+            <Row style={{marginTop:'7%'}}> 
+                <p style={{color:'white',fontSize:'14px'}}><strong>Popular Place :</strong> Bali, Istanbul, Rome, Paris.</p>
                 </Row>
         </Container>
     </div>
