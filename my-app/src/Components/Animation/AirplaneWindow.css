@@ -87,11 +87,11 @@
   .containers {
     height: 50vh;
     background-size: cover;
-    gap: 12%;
+    gap: 15%;
   }
 }
 
-
+/* 
 @media only screen and (max-width: 896px) and (min-width: 414px){
   .window {
     
@@ -107,7 +107,7 @@
   .containers {
     height: 50vh;
     background-size: cover;
-    gap: 19%;
+    gap: 8%;
   }
 }
 
@@ -186,7 +186,7 @@
     background-size: cover;
     gap: 17.5%;
   }
-}
+} */
 @media only screen and (max-width: 1024px) and (min-width: 768px){
   .window {
     
