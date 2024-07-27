@@ -8,6 +8,7 @@ import img1 from '../../images/icon-img1.jpg';
 // import img2 from '../../images/icon-img3.webp';
 import img2 from '../../images/icon-dollar.jpg';
 import img3 from '../../images/icon-trophy.jpg';
+import img4 from '../../images/icon-trophy1.jpg';
 import { RiMoneyDollarBoxFill } from "react-icons/ri";
 
 function BannerCard() {
@@ -38,7 +39,7 @@ function BannerCard() {
         },
         {
             title: 'Best Lodging Choices',
-            image:img3,
+            image:img4,
             description: 'From cozy hideaways to luxurious resorts, we\'ve handpicked the finest accommodations just for you. Rest easy knowing that wherever you lay your head, it\'ll be a perfect match for your style and comfort.',
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -70,6 +71,7 @@ function BannerCard() {
         },
         {
             title: 'Best Service',
+            image:img1,
             description: 'Beyond just a trip; we are all about crafting unforgettable experiences. With our warm smiles and personalized attention, every moment of your journey is stress-free and memorable.',
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
