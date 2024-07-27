@@ -72,34 +72,15 @@
   border-radius: 2vw;
 }
 
-@media only screen and (max-width: 932px) and (min-width: 420px){
+@media only screen and (max-width: 667px) and (min-width: 375px){
   .window {
     
-    height: 10.5vh;
+    height: 11vh;
     border-radius: 20px;
-    width:14.3vw;
+    width:12vw;
   }
   .image {
-    width: 14vw;
-    height: 9.7vh;
-    border-radius: 20px;
-  }
-  .containers {
-    height: 50vh;
-    background-size: cover;
-    gap: 17.8%;
-  }
-}
-
-@media only screen and (max-width: 896px) and (min-width: 414px){
-  .window {
-    
-    height: 10.5vh;
-    border-radius: 20px;
-    width:14.3vw;
-  }
-  .image {
-    width: 14vw;
+    width: 12vw;
     height: 9.7vh;
     border-radius: 20px;
   }
@@ -110,12 +91,13 @@
   }
 }
 
-@media only screen and (max-width: 385px) and (min-width: 375px){
+
+@media only screen and (max-width: 896px) and (min-width: 414px){
   .window {
     
-    height: 10.5vh;
+    height: 10vh;
     border-radius: 20px;
-    width:12.3vw;
+    width:14vw;
   }
   .image {
     width: 14vw;
@@ -125,64 +107,47 @@
   .containers {
     height: 50vh;
     background-size: cover;
-    gap: 14.5%;
+    gap: 19%;
   }
 }
+
 
 @media only screen and (max-width: 844px) and (min-width: 390px){
   .window {
     
-    height: 10.5vh;
+    height: 10vh;
     border-radius: 20px;
-    width:14.3vw;
+    width:13.5vw;
   }
   .image {
-    width: 14vw;
+    width: 13.5vw;
     height: 9.7vh;
     border-radius: 20px;
   }
   .containers {
     height: 50vh;
     background-size: cover;
-    gap: 16%;
+    gap: 19%;
   }
 }
 
-@media only screen and (max-width: 740px) and (min-width: 360px){
+
+@media only screen and (max-width: 932px) and (min-width: 430px){
   .window {
     
     height: 10.5vh;
     border-radius: 20px;
-    width:14.3vw;
+    width:14vw;
   }
   .image {
-    width: 14vw;
+    width: 13vw;
     height: 9.7vh;
     border-radius: 20px;
   }
   .containers {
     height: 50vh;
     background-size: cover;
-    gap: 17%;
-  }
-}
-
-@media only screen and (max-width: 915px) and (min-width: 412px){
-  .window {
-    
-    height: 10.5vh;
-    border-radius: 20px;
-    width:14.3vw;
-  }
-  .image {
-    width: 14vw;
-    height: 9.7vh;
-    border-radius: 20px;
-  }
-  .containers {
-    height: 50vh;
-    background-size: cover;
-    gap: 16%;
+    gap: 19%;
   }
 }
 
