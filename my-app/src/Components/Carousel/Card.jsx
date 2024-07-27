@@ -186,9 +186,9 @@ function Card() {
       {/* </div> */}
       <div className="content">
       <div className="nav1">
-          <span className="left-arrow shadow p-3 mb-5 bg-white rounded" onClick={handlePreviousSlide}>&lt;</span>
+          <span className="left-arrow shadow  bg-white rounded" onClick={handlePreviousSlide}>&lt;</span>
          
-          <span className="right-arrow shadow-lg p-3 mb-5 bg-white rounded" onClick={handleNextSlide}>&gt;</span>
+          <span className="right-arrow shadow5 bg-white rounded" onClick={handleNextSlide}>&gt;</span>
         </div>
         <div className="cards">
           {visibleSlides.map((slide, index) => (
@@ -201,8 +201,9 @@ function Card() {
               document.querySelector(`.card-content[data-index="${index}"]`).style.display = 'none';
               document.querySelector(`.card-image[data-index="${index}"]`).style.transform = 'translateY(0)'; 
             }}>
+            
               <div className="card-image" data-index={index}>
-                <img src={slide.image} alt={slide.title} />
+                <img src={slide.image} alt={slide.title}/>
               </div>
               <div className="card-content" data-index={index} style={{ display: 'none' }}>
                 <h3 style={{color:'#116cf5'}}>{slide.title}</h3>

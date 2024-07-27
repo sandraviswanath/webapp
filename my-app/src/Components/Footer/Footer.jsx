@@ -11,14 +11,14 @@ const Footer = () => {
   return (
     <footer className="bg-white py-4">
       <Container>
-        <Row className="justify-content-end">
-          <Col md={3} className="text-right">
+        <Row>
+          <Col xs={5}>
             <h5 style={{color:'gray'}}>Contact Information</h5>
             <p style={{color:'gray'}}><FaLocationDot/> 732 Despard St, Atlanta</p>
             <p style={{color:'gray'}}><RiPhoneFill/> +97 888 8888</p>
             <p style={{color:'gray'}}><TbMailFilled/> info@traveller.com</p>
           </Col>
-          <Col md={3} className="text-right">
+          <Col>
             <h5 style={{color:'gray'}}>Quick Link</h5>
             <ul className="list-unstyled">
               <li><a href="#"style={{textDecoration:'none',color:'gray'}}>Home</a></li>
@@ -27,7 +27,7 @@ const Footer = () => {
               <li><a href="#" style={{textDecoration:'none',color:'gray'}}>Contact</a></li>
             </ul>
           </Col>
-          <Col md={3} className="text-right">
+          <Col>
             <h5 style={{color:'gray'}}>Follow Us</h5>
             <ul className="list-inline">
               <li className="list-inline-item"><a href="#" style={{textDecoration:'none',color:'gray'}}  ><FaFacebook /></a></li>
