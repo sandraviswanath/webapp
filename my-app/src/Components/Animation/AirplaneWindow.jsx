@@ -11,8 +11,8 @@ const AirplaneWindow = () => {
     const [windowState, setWindowState] = useState('closed');
 
     useEffect(() => {
-        const animationInterval = 12000; // 12 seconds for the complete animation cycle
-        const step = animationInterval / 6; // 6 steps
+        const animationInterval = 12000; 
+        const step = animationInterval / 6; 
 
         const interval = setInterval(() => {
             setWindowState('open');

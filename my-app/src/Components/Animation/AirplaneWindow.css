@@ -1,123 +1,21 @@
 
-
-/* 
 @keyframes openShutter {
-  0% { transform: scaleY(0); transform-origin: top; }
-  100% { transform: scaleY(1); transform-origin: top; }
+  0% { transform: rotateX(90deg); transform-origin: top; }
+  100% { transform: rotateX(0deg); transform-origin: top; }
 }
 
 @keyframes closeShutter {
-  0% { transform: scaleY(1); transform-origin: top; }
-  100% { transform: scaleY(0); transform-origin: top; }
+  0% { transform: rotateX(0deg); transform-origin: top; }
+  100% { transform: rotateX(90deg); transform-origin: top; }
 }
 
 @keyframes backgroundAnimation {
-  0%, 16.67% { background-image: url('../../images/f1.png'); }
-  16.68%, 33.34% { background-image: url('../../images/f2.png'); }
-  33.35%, 50% { background-image: url('../../images/f3.png'); }
-  50.01%, 66.67% { background-image: url('../../images/f2.png'); }
-  66.68%, 83.34% { background-image: url('../../images/flight5.png'); }
-  83.35%, 100% { background-image: url('../../images/f1.png'); }
-}
-
-.containers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2%; 
-  width: 100%;
-  height: 95vh;
-  background-color: #dcddde;
-  background-repeat: no-repeat; 
-  background-position: center center; 
-  animation: backgroundAnimation 12s infinite;
-  overflow: hidden;
-}
-
-.shutter {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #bcbec0;
-  transform-origin: bottom;
-  z-index: 2; 
-}
-
-.open .shutter {
-  animation: openShutter 4s forwards; 
-}
-
-.closed .shutter {
-  animation: closeShutter 4s forwards; 
-}
-
-.window {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image {
-  width: 65px;
-  height: 100px;
-  border-radius: 20px;
-}
-
-@media (max-width: 930px) {
-  .window {
-    margin-top: 20%;
-    height: 85px;
-  }
-  .image {
-    width: 55px;
-    height: 85px;
-  }
-  .containers {
-    height: 50vh;
-    background-size: cover;
-  }
-}
-
-@media (max-width: 480px) {
-  .window {
-    margin-top: 18%;
-    height: 80px;
-  }
-  .image {
-    width: 53px;
-    height: 80px;
-  }
-  .containers {
-    height: 50vh;
-    background-size: cover;
-  }
-}  */
-
-
-
-@keyframes openShutter {
-  0% { transform: scaleY(0); transform-origin: top; }
-  100% { transform: scaleY(1); transform-origin: top; }
-}
-
-@keyframes closeShutter {
-  0% { transform: scaleY(1); transform-origin: top; }
-  100% { transform: scaleY(0); transform-origin: top; }
-}
-
-@keyframes backgroundAnimation {
-  0%, 16.67% { background-image: url('../../images/f1.png'); }
-  16.68%, 33.34% { background-image: url('../../images/f2.png'); }
-  33.35%, 50% { background-image: url('../../images/f3.png'); }
-  50.01%, 66.67% { background-image: url('../../images/f2.png'); }
-  66.68%, 83.34% { background-image: url('../../images/flight5.png'); }
-  83.35%, 100% { background-image: url('../../images/f1.png'); }
+  0%, 16.67% { background-image: url('../../images/windo1.png'); }
+  16.68%, 33.34% { background-image: url('../../images/window2.png'); }
+  33.35%, 50% { background-image: url('../../images/window3.png'); }
+  50.01%, 66.67% { background-image: url('../../images/window3.png'); }
+  66.68%, 83.34% { background-image: url('../../images/window2.png'); }
+  83.35%, 100% { background-image: url('../../images/windo1.png'); }
 }
 
 .containers {
@@ -129,9 +27,12 @@
   height: 95vh;
   background-color: #dcddde;
   background-repeat: no-repeat;
+  /* background-position: center center; */
   background-position: center center;
+  background-size: contain;
   animation: backgroundAnimation 12s infinite;
   overflow: hidden;
+  perspective: 1000px; 
 }
 
 .shutter {
@@ -143,6 +44,7 @@
   background: #bcbec0;
   transform-origin: bottom;
   z-index: 2;
+  transform-style: preserve-3d;
 }
 
 .open .shutter {
@@ -157,179 +59,34 @@
   position: relative;
   overflow: hidden;
   border-radius: 2vw;
-  height: 15vh;
+  height: 19.5vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  width:5.8vw;
 }
 
 .image {
-  width: 5vw;
-  height: 18vh;
+  width: 6vw;
+  height: 18.5vh;
   border-radius: 2vw;
 }
 
-@media (max-width: 930px) {
+@media only screen and (max-width: 932px) and (min-width: 420px){
   .window {
-    margin-top: 0%;
-    height: 9.5vh;
+    
+    height: 10.5vh;
+    border-radius: 20px;
+    width:14.3vw;
   }
   .image {
-    width: 7vw;
-    height: 9vh;
+    width: 14vw;
+    height: 9.7vh;
+    border-radius: 20px;
   }
   .containers {
     height: 50vh;
     background-size: cover;
-    gap: 12.5%;
+    gap: 18.5%;
   }
 }
-@media only screen and (max-width: 480px) and (min-width: 320px){
-  .window {
-    margin-top: 0%;
-    height: 12vh;
-
-  }
-  .image {
-    width: 7.6vw;
-    height: 11vh;
-  }
-  .containers {
-    height: 50vh;
-    background-size: cover;
-    gap: 12%;
-  }
-}
-
-@media only screen and (max-width: 650px) and (min-width: 450px){
-  .window {
-    margin-top: 0%;
-    height: 19vh;
-
-  }
-  .image {
-    width: 7.6vw;
-    height: 18vh;
-  }
-  .containers {
-    height: 50vh;
-    background-size: cover;
-    gap: 12%;
-  }
-}
-
-@media only screen and (max-width: 700px) and (min-width: 650px){
-  .window {
-    margin-top: 0%;
-    height: 21vh;
-
-  }
-  .image {
-    width: 7.6vw;
-    height: 20vh;
-  }
-  .containers {
-    height: 50vh;
-    background-size: cover;
-    gap: 12%;
-  }
-}
-@media only screen and (max-width: 480px) and (min-width: 200px){
-  .window {
-    margin-top: 0%;
-    height: 12vh;
-
-  }
-  .image {
-    width: 8vw;
-    height: 11vh;
-  }
-  .containers {
-    height: 50vh;
-    background-size: cover;
-    gap: 12%;
-  }
-}
-@media only screen and (max-width: 530px) and (min-width: 430px){
-  .window {
-    margin-top: 0%;
-    height: 14vh;
- 
-  }
-  .image {
-    width: 8vw;
-    height: 13vh;
-   
-  }
-  .containers {
-    height: 50vh;
-    background-size: cover;
-    gap: 11.5%;
-  }
-}
-
-@media only screen and (max-width: 750px) and (min-width: 700px){
-  .window {
-    margin-top: 0%;
-    height: 21vh;
-  }
-  .image {
-    width: 7vw;
-    height: 21vh;
-  }
-  .containers {
-    height: 50vh;
-    background-size: cover;
-    gap: 12.5%;
-  }
-}
-
-  
-@media only screen and (max-width: 1024px) and (min-width: 750px){
-  .window {
-    margin-top: 0%;
-    height: 28vh;
-  }
-  .image {
-    width: 7vw;
-    height: 28vh;
-  }
-  .containers {
-    height: 50vh;
-    background-size: cover;
-    gap: 12.5%;
-  }
-}
-
-@media only screen and (max-width: 1200px) and (min-width: 1025px){
-  .window {
-    margin-top: 0%;
-    height: 50vh;
-  }
-  .image {
-    width: 6vw;
-    height: 50vh;
-  }
-  .containers {
-    height: 60vh;
-    background-size: cover;
-    gap: 12.5%;
-  }
-}
-/* @media (max-width: 480px) {
-  .window {
-    margin-top: 0%;
-    height: 9vh;
-
-  }
-  .image {
-    width: 13vw;
-    height: 8vh;
-  }
-  .containers {
-    height: 50vh;
-    background-size: cover;
-    gap: 20%;
-  }
-} */
-
