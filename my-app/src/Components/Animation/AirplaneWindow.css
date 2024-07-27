@@ -262,7 +262,8 @@
   .containers {
     height: 50vh;
     background-size: cover;
-    gap: 11%;
+    /* gap: 11%; */
+    gap: 15%;
   }
 } 
 
