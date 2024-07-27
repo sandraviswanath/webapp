@@ -187,6 +187,10 @@
     gap: 17.5%;
   }
 } */
+
+
+
+/* 
 @media only screen and (max-width: 1024px) and (min-width: 768px){
   .window {
     
@@ -242,24 +246,28 @@
     gap: 12%;
   }
 }
+  */
 @media only screen and (max-width: 720px) and (min-width: 540px){
   .window {
     
-    height: 10vh;
+    height: 25vh;
     border-radius: 20px;
     width:9vw;
   }
   .image {
-    width: 13vw;
-    height: 9.7vh;
+    width: 9vw;
+    height: 25vh;
     border-radius: 20px;
   }
   .containers {
     height: 50vh;
     background-size: cover;
-    gap: 11.2%;
+    gap: 11%;
   }
-}
+} 
+
+
+
 /* @media only screen and (max-width: 882px) and (min-width: 344px){
   .window {
     
@@ -278,6 +286,8 @@
     gap: 23%;
   }
 } */
+
+/* 
 @media only screen and (max-width: 1280px) and (min-width: 800px){
   .window {
     
@@ -295,4 +305,4 @@
     background-size: cover;
     gap: 11.7%;
   }
-}
+} */
