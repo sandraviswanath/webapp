@@ -90,3 +90,117 @@
     gap: 18.5%;
   }
 }
+
+@media only screen and (max-width: 896px) and (min-width: 414px){
+  .window {
+    
+    height: 10.5vh;
+    border-radius: 20px;
+    width:14.3vw;
+  }
+  .image {
+    width: 14vw;
+    height: 9.7vh;
+    border-radius: 20px;
+  }
+  .containers {
+    height: 50vh;
+    background-size: cover;
+    gap: 18.5%;
+  }
+}
+
+@media only screen and (max-width: 385px) and (min-width: 375px){
+  .window {
+    
+    height: 10.5vh;
+    border-radius: 20px;
+    width:12.3vw;
+  }
+  .image {
+    width: 14vw;
+    height: 9.7vh;
+    border-radius: 20px;
+  }
+  .containers {
+    height: 50vh;
+    background-size: cover;
+    gap: 14.5%;
+  }
+}
+
+@media only screen and (max-width: 844px) and (min-width: 390px){
+  .window {
+    
+    height: 10.5vh;
+    border-radius: 20px;
+    width:14.3vw;
+  }
+  .image {
+    width: 14vw;
+    height: 9.7vh;
+    border-radius: 20px;
+  }
+  .containers {
+    height: 50vh;
+    background-size: cover;
+    gap: 18.5%;
+  }
+}
+
+@media only screen and (max-width: 740px) and (min-width: 360px){
+  .window {
+    
+    height: 10.5vh;
+    border-radius: 20px;
+    width:14.3vw;
+  }
+  .image {
+    width: 14vw;
+    height: 9.7vh;
+    border-radius: 20px;
+  }
+  .containers {
+    height: 50vh;
+    background-size: cover;
+    gap: 17.2%;
+  }
+}
+
+@media only screen and (max-width: 915px) and (min-width: 412px){
+  .window {
+    
+    height: 10.5vh;
+    border-radius: 20px;
+    width:14.3vw;
+  }
+  .image {
+    width: 14vw;
+    height: 9.7vh;
+    border-radius: 20px;
+  }
+  .containers {
+    height: 50vh;
+    background-size: cover;
+    gap: 18.5%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+  .window {
+    
+    height: 10vh;
+    border-radius: 20px;
+    width:9vw;
+  }
+  .image {
+    width: 10vw;
+    height: 9.7vh;
+    border-radius: 20px;
+  }
+  .containers {
+    height: 50vh;
+    background-size: cover;
+    gap: 11.3%;
+  }
+}
