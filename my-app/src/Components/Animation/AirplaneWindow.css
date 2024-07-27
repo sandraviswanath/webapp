@@ -250,7 +250,8 @@
 @media only screen and (max-width: 812px) and (min-width: 540px){
   .window {
     
-    height: 25vh;
+    height: 28vh;
+    /* height:25vh; */
     border-radius: 20px;
     width:9vw;
   }
